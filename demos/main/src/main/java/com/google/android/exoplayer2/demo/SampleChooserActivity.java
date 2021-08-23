@@ -222,7 +222,7 @@ public class SampleChooserActivity extends AppCompatActivity
     prefEditor.apply();
 
     PlaylistHolder playlistHolder = (PlaylistHolder) view.getTag();
-    Intent intent = new Intent(this, PlayerActivity.class);
+    Intent intent = new Intent(this, DoublePlayerActivity.class);
     intent.putExtra(
         IntentUtil.PREFER_EXTENSION_DECODERS_EXTRA,
         isNonNullAndChecked(preferExtensionDecodersMenuItem));
